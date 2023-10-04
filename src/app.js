@@ -11,6 +11,7 @@ const rateLimit = require("express-rate-limit");
 const csrf = require("csurf");
 const cookieParser = require("cookie-parser");
 const mongoSanitize = require("express-mongo-sanitize");
+const limiter=require("./utils/limiter")
 
 
 const courseModel = require("./db/courseDB");

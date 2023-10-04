@@ -1,12 +1,12 @@
 const mongoose=require("mongoose");
 const dotenv=require("dotenv");
-const config=require("../config.json")
+// const config=require("")
 
 
 
 const connectDatabase=()=>{
 mongoose
-  .connect(config.mongodb_uri, {
+  .connect("mongodb+srv://kirattechnologies:iRbi4XRDdM7JMMkl@cluster0.e95bnsi.mongodb.net/courses", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })

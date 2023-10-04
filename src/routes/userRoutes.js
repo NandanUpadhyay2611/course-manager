@@ -7,7 +7,7 @@ const router=express.Router();
 
 
 
-router.route("/create").post(authenticate,createProduct)
+// router.route("/create").post(authenticate,createProduct)
 
 router.route("/login").get(loginGet)
 router.route("/login").post(loginPost)
